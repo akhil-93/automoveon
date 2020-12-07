@@ -1,0 +1,1276 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Product details - automoveon</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+		
+
+		
+		<!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- simple-line-icons css -->
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+		<!-- nivo-slider.css -->
+        <link rel="stylesheet" href="css/nivo-slider.css">
+		<!-- chosen.min.css -->
+        <link rel="stylesheet" href="css/chosen.min.css">
+		<!-- flexslider.css -->
+        <link rel="stylesheet" href="css/flexslider.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- modernizr css -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		
+		
+<link href="path/to/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+ 
+<!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
+<link href="path/to/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="path/to/js/star-rating.js" type="text/javascript"></script>
+ 
+<!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
+<script src="path/to/themes/krajee-svg/theme.js"></script>
+ 
+<!-- optionally if you need translation for your language then include locale file as mentioned below -->
+<script src="path/to/js/locales/{lang}.js"></script>
+		
+		
+    </head>
+    <body class="product-details shop">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!-- header-area-start -->
+		
+		
+	<style>
+
+
+     .product-details .review-title a {background:none; color:#000;}
+	 
+	 .product-details .review-title a:hover {background:none;}
+	 
+	.submit-btn {background:#506e9b; border-radius:6px; color:#fff; border:none; padding:6px 20px; margin-top:20px;}
+	
+	.rating {
+    float:left;
+}
+
+
+
+.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+
+
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  #half-stars-example .rating-group {
+    display: inline-flex;
+  }
+  
+  /* make hover effect work properly in IE */
+ #half-stars-example .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  #half-stars-example  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  #half-stars-example  .rating__label {
+    cursor: pointer;
+    /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+
+  /* add padding and positioning to half star labels */
+  #half-stars-example  .rating__label--half {
+    padding-right: 0;
+    margin-right: -0.6em;
+    z-index: 2;
+  }
+  
+  /* set default star color */
+  #half-stars-example .rating__icon--star {
+    color: orange;
+  }
+  
+  /* set color of none icon when unchecked */
+  #half-stars-example .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  #half-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  #half-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make all stars orange on rating group hover */
+  #half-stars-example  .rating-group:hover .rating__label .rating__icon--star,
+  #half-stars-example  .rating-group:hover .rating__label--half .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  #half-stars-example  .rating__input:hover ~ .rating__label .rating__icon--star,
+  #half-stars-example  .rating__input:hover ~ .rating__label--half .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make none icon grey on rating group hover */
+  #half-stars-example  .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+     color: #eee;
+  }
+
+  /* make none icon red on hover */
+  #half-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+
+
+
+   </style>	
+		
+		
+		
+	<header>
+			<!-- fixed-header-area-start -->
+			<!--<div class="fixed-header-area" id="sticky-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="main-menu">
+								<nav>
+									<ul>
+										<li><a href="index.html">Home<i class="fa fa-angle-down"></i></a>
+											<div class="sub-menu">
+												<ul>
+													<li><a href="index-2.html">home 2</a></li>
+													<li><a href="index-3.html">home 3</a></li>
+													<li><a href="index-4.html">home 4</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="shop.html">Living Room<i class="fa fa-angle-down"></i></a>
+											<div class="mega-menu-area">
+												<div class="mega-menu">
+													<span>
+														<a href="#" class="title">Chair</a>
+														<a href="shop.html">Dining room</a>
+														<a href="shop.html">Lighting</a>
+														<a href="shop.html">Ritchie</a>
+														<a href="shop.html">Merano</a>
+													</span>
+													<span>
+														<a href="#" class="title">Table</a>
+														<a href="shop.html">Folding Tables</a>
+														<a href="shop.html">Conference Tables</a>
+														<a href="shop.html">Drafting Tables</a>
+														<a href="shop.html">Training Room Tables   </a>
+													</span>
+													<span>
+														<a href="#" class="title">Lighting</a>
+														<a href="shop.html">Ceiling Lighting</a>
+														<a href="shop.html">Wall Lighting</a>
+														<a href="shop.html">Outdoor Lighting</a>
+														<a href="shop.html">Smart Lighting</a>
+													</span>
+													<span>
+														<a href="#" class="title">Sofa</a>
+														<a href="shop.html">Dining room</a>
+														<a href="shop.html">Lighting</a>
+														<a href="shop.html">Ritchie</a>
+														<a href="shop.html">Merano</a>
+													</span>
+												</div>
+												<div class="menu-static">
+													<div class="single-banner">
+														<a href="#"><img src="img/banner/7.jpg" alt="banner" /></a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a href="#">Bedroom<i class="fa fa-angle-down"></i></a>
+											<div class="mega-menu-area mega-menu-area-2">
+												<div class="mega-menu">
+													<span>
+														<a href="#" class="title">Dining & Bar</a>
+														<a href="shop.html">Dining Sets</a>
+														<a href="shop.html">Dining Sets</a>
+														<a href="shop.html">Dining Tables</a>
+														<a href="shop.html">Bar Stools</a>
+													</span>
+													<span>
+														<a href="#" class="title">Office Furniture</a>
+														<a href="shop.html">Office Chairs</a>
+														<a href="shop.html">Office Tables</a>
+														<a href="shop.html">Office Sofas</a>
+														<a href="shop.html">Book Cashes</a>
+													</span>
+												</div>
+											</div>
+										</li>
+										<li><a href="#">pages<i class="fa fa-angle-down"></i></a>
+											<div class="sub-menu">
+												<ul>
+													<li><a href="shop.html">Shop</a></li>
+													<li><a href="product-details.html">product-details</a></li>
+													<li><a href="blog.html">blog</a></li>
+													<li><a href="blog-details.html">blog-details</a></li>
+													<li><a href="login.html">login</a></li>
+													<li><a href="register.html">register</a></li>
+													<li><a href="contact.html">contact</a></li>
+													<li><a href="about.html">about</a></li>
+													<li><a href="cart.html">cart</a></li>
+													<li><a href="checkout.html">checkout</a></li>
+													<li><a href="wishlist.html">wishlist</a></li>
+													<li><a href="404.html">404</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="#">blog<i class="fa fa-angle-down"></i></a>
+											<div class="sub-menu">
+												<ul>
+													<li><a href="blog.html">blog</a></li>
+													<li><a href="blog-details.html">blog-details</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="about.html">About us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<!-- fixed-header-area-end -->
+			<!-- header-top-start -->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-3">
+							<!-- contact-link-area-start -->
+							<div class="contact-link">
+								<ul>
+									<li><div class="social-icon">
+									<ul>
+										<li><a href="#" title="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" title="Share on Twitter"><i  class="fa fa-twitter"></i></a></li>
+										<li><a href="#" title="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div></li>
+									<!--<li class="welcome-msg hidden-sm hidden-xs">Welcome you to <span>Estore</span> store!</li>-->
+								</ul>
+							</div>
+							<!-- contact-link-area-end -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+							<!-- header-right-menu-start -->
+							<div class="header-right-menu">
+								<ul>
+									<!--<li><a href="#"><img src="img/flag/1.jpg" alt="flag" /><span>languages :</span>English<i class="fa fa-angle-down"></i></a>
+										<div class="header-sub">
+											<ul>
+												<li><a href="#"><img src="img/flag/1.jpg" alt="flag" />English</a></li>
+												<li><a href="#"><img src="img/flag/2.jpg" alt="flag" />اللغة العربية</a></li>
+											</ul>
+										</div>
+									</li>-->
+									<!--<li><a href="#"><span>Currency :</span>USD<i class="fa fa-angle-down"></i></a>
+										<div class="header-sub">
+											<ul>
+												<li><a href="#"> Dollar (USD) </a></li>
+												<li><a href="#"> Pound (GBP) </a></li>
+											</ul>
+										</div>
+									</li>-->
+									<li><a href="register.html">My account &nbsp; |</a> 
+								      <li><a href="login.html"> Log in </a></li>
+
+										
+									</li>
+								</ul>
+							</div>
+							<!-- header-right-menu-end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header-top-end -->
+			<!-- header-mid-area-start -->
+			<div class="header-mid-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							<!-- logo-area-start -->
+							<div class="logo-area">
+								<a href="index.html"><img src="img/logo/1.png" alt="automeoveon" /></a>
+							</div>
+							<!-- logo-area-end -->
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-right">
+							<!-- cart-area-start -->
+							<div class="cart-area">
+								<ul>
+									<li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+									<li><a href="cart.html"><i class="icon-basket icons"></i><span  class="total-cart">2</span></a>
+										<div class="mini-cart-sub">
+											<div class="cart-product">
+												<div class="single-cart">
+													<div class="cart-img">
+														<a href="#"><img src="img/product/1.jpg" alt="book" /></a>
+													</div>
+													<div class="cart-info">
+														<h5><a href="#">Joust Duffle Bag</a></h5>
+														<p>1 x £60.00</p>
+													</div>
+												</div>
+												<div class="single-cart">
+													<div class="cart-img">
+														<a href="#"><img src="img/product/2.jpg" alt="book" /></a>
+													</div>
+													<div class="cart-info">
+														<h5><a href="#">Chaz Kangeroo Hoodie</a></h5>
+														<p>1 x £52.00</p>
+													</div>
+												</div>
+											</div>
+											<div class="cart-totals">
+												<h5>Total <span>£12.00</span></h5>
+											</div>
+											<div class="cart-bottom">
+												<a href="checkout.html">Check out</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- cart-area-end -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<!-- search-area-start -->
+							<div class="search-area">
+								<form action="#">
+									<input type="text" placeholder="Search your service ..." />
+									
+									<a href="#">Search</a>
+								</form>
+							</div>
+							<!-- search-area-end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header-mid-area-end -->
+			<!-- header-bottom-area-start -->
+			<div class="header-bottom-area hidden-xs hidden-sm" id="sticky-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="main-menu">
+									<nav>
+										<ul>
+											<li class=""><a href="index.html">Home</a>
+												<!--<div class="sub-menu">
+													<ul>
+														<li><a href="index-2.html">home 2</a></li>
+														<li><a href="index-3.html">home 3</a></li>
+														<li><a href="index-4.html">home 4</a></li>
+													</ul>
+												</div>-->
+											</li>
+											
+											<li><a href="about.html" class="nav-active">About us</a>
+											
+											<li class="active"><a href="#">Car services <i class="icon-arrow-down"></i></a>
+												<div class="sub-menu">
+													<ul>
+														<li><a href="services.html">Auto Service Packages</a></li>
+														<li><a href="autospa.html">Auto spa</a></li>
+														<li><a href="fullinspection.html">Full Inspection Service </a></li>  
+														<li><a href="products.html">Products</a></li>
+													</ul>
+												</div>
+												<!--<div class="mega-menu-area">
+													<div class="mega-menu">
+														<span>
+															<a href="#" class="title">Chair</a>
+															<a href="shop.html">Dining room</a>
+															<a href="shop.html">Lighting</a>
+															<a href="shop.html">Ritchie</a>
+															<a href="shop.html">Merano</a>
+														</span>
+														<span>
+															<a href="#" class="title">Table</a>
+															<a href="shop.html">Folding Tables</a>
+															<a href="shop.html">Conference Tables</a>
+															<a href="shop.html">Drafting Tables</a>
+															<a href="shop.html">Training Room Tables   </a>
+														</span>
+														<span>
+															<a href="#" class="title">Lighting</a>
+															<a href="shop.html">Ceiling Lighting</a>
+															<a href="shop.html">Wall Lighting</a>
+															<a href="shop.html">Outdoor Lighting</a>
+															<a href="shop.html">Smart Lighting</a>
+														</span>
+														<span>
+															<a href="#" class="title">Sofa</a>
+															<a href="shop.html">Dining room</a>
+															<a href="shop.html">Lighting</a>
+															<a href="shop.html">Ritchie</a>
+															<a href="shop.html">Merano</a>
+														</span>
+													</div>
+													<div class="menu-static">
+														<div class="single-banner">
+															<a href="#"><img src="img/banner/7.jpg" alt="banner" /></a>
+														</div>
+													</div>
+												</div>-->
+												
+											<!--<div class="sub-menu">
+													<ul>
+														<li><a href="index-2.html">Auto Services</a></li>
+														<li><a href="index-3.html">Auto Spa</a></li>
+														<li><a href="index-4.html">Auto Inspection</a></li>
+														<li><a href="index-2.html">Rent a Car</a></li>
+														<li><a href="index-3.html">Battery</a></li>
+														<li><a href="index-4.html">Tyre</a></li>
+														<li><a href="index-4.html">Music systems</a></li>
+													</ul>
+												</div>-->
+												
+											</li>
+											<li><a href="offers.html">our offers</a>
+												<!--<div class="mega-menu-area mega-menu-area-2">
+													<div class="mega-menu">
+														<span>
+															<a href="#" class="title">Dining & Bar</a>
+															<a href="shop.html">Dining Sets</a>
+															<a href="shop.html">Dining Sets</a>
+															<a href="shop.html">Dining Tables</a>
+															<a href="shop.html">Bar Stools</a>
+														</span>
+														<span>
+															<a href="#" class="title">Office Furniture</a>
+															<a href="shop.html">Office Chairs</a>
+															<a href="shop.html">Office Tables</a>
+															<a href="shop.html">Office Sofas</a>
+															<a href="shop.html">Book Cashes</a>
+														</span>
+													</div>
+												</div>-->
+											</li>
+											<li><a href="contact.html">Contact</a>
+												<!--<div class="sub-menu">
+													<ul>
+														<li><a href="shop.html">Shop</a></li>
+														<li><a href="product-details.html">product-details</a></li>
+														<li><a href="blog.html">blog</a></li>
+														<li><a href="blog-details.html">blog-details</a></li>
+														<li><a href="login.html">login</a></li>
+														<li><a href="register.html">register</a></li>
+														<li><a href="contact.html">contact</a></li>
+														<li><a href="about.html">about</a></li>
+														<li><a href="cart.html">cart</a></li>
+														<li><a href="checkout.html">checkout</a></li>
+														<li><a href="wishlist.html">wishlist</a></li>
+														<li><a href="404.html">404</a></li>
+													</ul>
+												</div>-->
+											</li>
+											
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- header-bottom-area-end -->
+			<!-- mobile-menu-area-start -->
+			<div class="mobile-menu-area hidden-md hidden-lg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="mobile-menu">
+								<nav id="mobile-menu-active">
+									<ul id="nav">
+										<li class=""><a href="index.html" class="nav-active">Home</a>
+											<!--<ul>
+												<li><a href="index-2.html">Home-2</a></li>
+												<li><a href="index-3.html">Home-3</a></li>
+												<li><a href="index-4.html">Home-4</a></li>
+											</ul>-->
+										</li>
+										
+										<li><a href="about.html" class="nav-active">About us</a>
+										
+										<li class="active"><a href="#">car services <i class="icon-arrow-down"></i></a>
+											<div class="sub-menu">
+													<ul>
+														<li><a href="services.html">Auto Service Packages</a></li>
+														<li><a href="autospa.html">Auto spa</a></li>
+														<li><a href="fullinspection.html">Full Inspection Service </a></li>  
+														<li><a href="products.html">Products</a></li>
+													</ul>
+												</div>
+											<!--<ul>
+												<li><a href="#">Auto Inspection</a></li>
+												<li><a href="#">Auto Spa</a></li>
+												<li><a href="#">Ritchie</a></li>
+												<li><a href="#">Merano</a></li>
+												<li><a href="#">Folding Tables</a></li>
+												<li><a href="#">Conference Tables</a></li>
+												<li><a href="shop.html">Drafting Tables</a></li>
+												<li><a href="shop.html">Training Room Tables</a></li>
+												<li><a href="shop.html">Ceiling Lighting</a></li>
+												<li><a href="shop.html">Wall Lighting</a></li>
+												<li><a href="shop.html">Outdoor Lighting</a></li>
+												<li><a href="shop.html">Smart Lighting</a></li>
+												<li><a href="shop.html">Dining room</a></li>
+												<li><a href="shop.html">Lighting</a></li>
+												<li><a href="shop.html">Ritchie</a></li>
+												<li><a href="shop.html">Merano</a></li>
+											</ul>-->
+										</li>
+										<li><a href="offers.html">Our offers</a>
+											<!--<ul>
+												<li><a href="shop.html">Dining Sets</a></li>
+												<li><a href="shop.html">Dining Sets</a></li>
+												<li><a href="shop.html">Dining Tables</a></li>
+												<li><a href="shop.html">Bar Stools</a></li>
+												<li><a href="shop.html">Office Chairs</a></li>
+												<li><a href="shop.html">Office Tables</a></li>
+												<li><a href="shop.html">Office Sofas</a></li>
+												<li><a href="shop.html">Book Cashes</a></li>
+											</ul>-->
+										</li>
+										<li><a href="contact.html">Contact</a>
+											<!--<ul>
+												<li><a href="shop.html">Shop</a></li>
+												<li><a href="product-details.html">product-details</a></li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-details.html">blog-details</a></li>
+												<li><a href="about.html">About</a></li>
+												<li><a href="contact.html">Contact</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="login.html">Login</a></li>
+												<li><a href="register.html">Register</a></li>
+												<li><a href="wishlist.html">Wishlist</a></li>
+												<li><a href="404.html">404 Page</a></li>
+											</ul>-->
+										</li>
+										
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- mobile-menu-area-end -->
+		</header>
+        <!-- header-area-end -->
+		<!-- breadcrumb-area-start -->
+		<div class="breadcrumb-area ptb-40">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb">
+							<ul>
+								<li><a href="#"><i class="fa fa-home"></i> </a></li>
+								<li><a href="#" class="active"><i class="fa fa-angle-right"></i>product-details</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumb-area-end -->
+		<!-- product-details-area-start -->
+		<div class="product-details-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="img/flex/1.png">
+								<span id="ex1" class="zoom">
+								  <img src="img/flex/1.png" width='400' height='320' alt="" />
+								  </span>
+								</li>
+								<li data-thumb="img/flex/2.png">
+								<span class="zoom" id="ex2" class="zoom" id="">
+
+								  <img src="img/flex/2.png" width='400' height='320' alt="" />
+								  </span>
+								</li>
+								<li data-thumb="img/flex/4.png">
+								<span class="zoom" id="ex3">
+								  <img id="ex3" src="img/flex/4.png" width='400' height='320' alt="" />
+								  </span>
+								</li>
+								
+								<li data-thumb="img/flex/4.png">
+								<span class="zoom" id="ex4">
+								  <img id="ex4" src="img/flex/4.png" width='400' height='320' alt="" />
+								  </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+						<div class="product-info-main">
+							<div class="page-title">
+								<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+							</div>
+							<div class="comments_advices">
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<!--<a href="#" class="review">Write a review </a>-->
+							</div>
+							<!--<div class="product_reference">
+								<p>Reference:<span>demo_13</span></p>
+							</div>
+							<div class="product_condition">
+								<p>Condition: <span>New product</span></p>
+							</div>-->
+							<div class="product-info-price">
+								<div class="price-final">
+									<!--span>$14.00</span>-->
+
+								</div>
+							</div>
+							<div class="short_description_block">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							</div>
+							
+														<p style="font-weight:100; padding-left:0px;">Address</p>
+
+							
+							<!--<div class="product-add-form">
+								<form action="#">
+									<div class="quality-button">
+										<label>Quantity</label>
+										<input class="qty" type="number" value="1">
+									</div>
+								</form>
+							</div>-->
+							<div class="box-cart-bottom">
+								<div class="add_to_cart">
+									<a href="cart.html">Add to cart</a>
+								</div>
+								
+								<div class="add_to_cart" style="margin-left:6px;">
+									<a href="checkout.html">Checkout</a>
+								</div>
+								<div class="add-to-links-2">
+									<ul>
+										<!--<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>-->
+										<!--<li><a href="#"><i class="fa fa-print"></i></a></li>-->
+										<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="more-info-area mt-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- tab-menu-start -->
+						<div class="tab-menu mb-40 text-center ">
+							<ul>
+								<li class="active"><a href="#More" data-toggle="tab" aria-expanded="true">More info </a></li>
+								<li class=""><a href="#Data" data-toggle="tab" aria-expanded="false">Data sheet</a></li>
+								<li class=""><a href="#Reviews" data-toggle="tab" aria-expanded="false">Reviews</a></li>
+							</ul>
+						</div>
+						<!-- tab-menu-end -->
+					</div>
+				</div>
+				<!-- tab-area-start -->
+				<div class="tab-content">
+					<div class="tab-pane active in" id="More">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="rate">
+									<p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="Data">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="page-product-box">
+									<table class="table-data-sheet">
+										<tbody>
+											<tr class="odd">
+												<td>Compositions</td>
+												<td>Polyester</td>
+											</tr>
+											<tr class="even">
+												<td>Styles</td>
+												<td>Girly</td>
+											</tr>
+											<tr class="odd">
+												<td>Properties</td>
+												<td>Midi Dress</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="Reviews">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="review-title">
+									<div class="author-info mb-30">
+											<div class="author-avatar">
+												<a href="#"><img src="img/banner/39.png" alt="banner"></a>
+											</div>
+											<div class="author-description">
+												<h2> User: <a href="#">admin</a></h2>
+												
+												<date>March 1,2017<date>
+												<p>Cras id nulla at metus congue auctor. Suspendisse auctor dictum orci quis interdum. Nullam et eleifend metus. Integer in est orci. Duis hendrerit ex metus, vel tempor sem aliquet nec. Donec ornare hendrerit bibendum. Nullam dui erat, tempus eu nisl vitae, venenatis gravida ipsum. Suspendisse potenti.</p>
+											</div>
+										</div>
+								</div>
+								<div class="review-title">
+									<div class="author-info mb-30">
+											<div class="author-avatar">
+												<a href="#"><img src="img/banner/39.png" alt="banner"></a>
+											</div>
+											<div class="author-description">
+												<h2> User: <a href="#">admin</a></h2>
+												
+												<date>March 1,2017<date>
+												<p>Cras id nulla at metus congue auctor. Suspendisse auctor dictum orci quis interdum. Nullam et eleifend metus. Integer in est orci. Duis hendrerit ex metus, vel tempor sem aliquet nec. Donec ornare hendrerit bibendum. Nullam dui erat, tempus eu nisl vitae, venenatis gravida ipsum. Suspendisse potenti.</p>
+											</div>
+										</div>
+								</div>
+								
+								<form>
+								
+								 <div class="form-group">
+    <label for="exampleFormControlTextarea1">Enter your Review</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	
+	<input type="submit" class="submit-btn" placeholder="Submit">
+	
+  </div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- tab-area-end -->
+			</div>
+		</div>
+		
+		<!-- product-details-area-end -->
+		<!-- more-info-area-start -->
+		
+		<!-- more-info-area-end -->
+		<!-- product-main-wrapper-start -->
+		<!--<div class="product-main-wrapper pt-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title mb-25 text-center">
+							<h2>Featured <span>products</span></h2>
+						</div>
+						<div class="product-active-6">
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/11.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">Hand Carved Wood Sand Piper Glass Eyes...</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$27.86</li>
+												<li class="old-price">$30.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<!--li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/12.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">Wooden Plate Model Balsa Wood DIY House...</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$14.86</li>
+												<li class="old-price">$16.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/13.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">new fashion purple decorative crystal...</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$30.86</li>
+												<li class="old-price">$35.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/14.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">Cargo Lacey 3 Seater Pillow Back Sofa</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$50.86</li>
+												<li class="old-price">$55.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/15.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">New arrival home decor glazed ceramic...</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$30.86</li>
+												<li class="old-price">$35.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="single-product-2">
+									<div class="product-image-total">
+										<div class="product-image-2">
+											<a href="#"><img src="img/product/17.jpg" alt="char" /></a>
+										</div>
+										<span>New</span>
+										<a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="product-content-2 text-center product-content-3">
+										<span>Furniture Manufacturer</span>
+										<h4><a href="#">Butterfly Mid-Century Dining Chair,...</a></h4>
+										<div class="price">
+											<ul>
+												<li class="new-price">$17.86</li>
+												<li class="old-price">$20.51</li>
+											</ul>
+										</div>
+										<div class="add-to-links">
+											<ul>
+												<li><a href="#" class="heart"><i class="fa fa-heart-o"></i></a></li>
+												<li><a href="#">Add to cart</a></li>
+												<li><a href="#" class="refresh"><i class="fa fa-refresh"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- product-main-wrapper-end -->
+		<!-- newslatter-area-start -->
+		<div class="newslatter-area mt-80 ptb-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="newslatter-title">
+							<h4>Get in Touch with Us
+</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="newslatter-form">
+													<button class="contact-btn" title="Contact Us">CONTACT US</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- newslatter-area-end -->
+		<!-- footer-area-start -->
+	<footer>
+			<!-- footer-top-area-start -->
+			<div class="footer-top-area ptb-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-20 mt-20">
+							<div class="single-footer">
+								<div class="footer-title">
+									<h4>About Us</h4>
+								</div>
+								<div class="footer-address">
+									<p> Subscibe to MailLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								
+								
+								<div class="footer-social">
+								<ul>
+									<li class="facebook"><a href="#"></a></li>
+									<li class="twitter"><a href="#"></a></li>
+									<li class="google-plus"><a href="#"></a></li>
+								</ul>
+							</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-20 mt-20">
+							<div class="single-footer">
+								<div class="footer-title">
+									<h4>QUICK LINKS</h4>
+								</div>
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About us</a></li>
+										<li><a href="#">Car Services</a></li>
+										<li><a href="#">Our Offers</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-20 mt-20">
+							<div class="single-footer">
+								<div class="footer-title">
+									<h4>OUR SERVICES</h4>
+								</div>
+								<div class="footer-menu">
+									<ul>
+										<li><a href="#">Auto Services</a></li>
+										<li><a href="#">Auto Inspection</a></li>
+										<li><a href="#">Auto Spa</a></li>
+										<li><a href="#">Rent a car</a></li>
+										<li><a href="#">Battery</a></li>
+										<li><a href="#">Tyre</a></li>
+										<li><a href="#">Music systems</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-20 mt-20">
+							<div class="single-footer">
+								<div class="footer-title">
+									<h4>Contact</h4>
+								</div>
+								<div class="footer-address">
+									<p> 123 Main Street, Anytown, CA 12345 USA.</p>
+									<p> (800) 123 456 789</p>
+									<p>(800) 123 456 789</p>
+									<p>info@automoveon.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-top-area-end -->
+		
+			<!-- footer-bottom-area-start -->
+			<div class="footer-bottom-area ptb-20">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="copyright-area">
+								<p>&copy; <a href="#">automeoveon.com</a> All Rights Reserved</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="footer-link text-right">
+															<p>Wordpress theme design & developed - <a href="#"><img src="./img/foot-logo.png"/></a></p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom-area-end -->
+		</footer>
+		<!-- footer-area-end -->
+		<!-- modal-area-start -->
+		<div class="modal-area">
+			<!-- single-modal-start -->
+			<div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="modal-img">
+								<div class="single-img">
+									<img src="img/product/12.jpg" alt="mobile" class="primary" />
+								</div>
+							</div>
+							<div class="model-text">
+								<h2><a href="#">Printed Summer Dress</a> </h2>
+								<div class="product-rating">
+									<a href="#"><i class="fa fa-star"></i></a>
+									<a href="#"><i class="fa fa-star"></i></a>
+									<a href="#"><i class="fa fa-star"></i></a>
+									<a href="#"><i class="fa fa-star"></i></a>
+									<a href="#"><i class="fa fa-star-o"></i></a>
+								</div>
+								<div class="price-rate">
+									<span class="old-price"><del>$39.00</del></span>
+									<span class="new-price">$59.00</span>
+								</div>
+								<div class="short-description mt-20">
+									<p>Bacon ipsum dolor sit amet ut nostrud chuck, voluptate adipisicing veniam kielbasa fugiat ex spare ribs. Incididunt sint officia non cow, ut et. Cillum porchetta tongue occaecat laborum bacon aliquip fatback flank dolore short loin ball tip bresaola deserunt dolor. Shoulder fugiat ut in ut tail swine dolore, capicola ullamco beef occaecat meatball. Laboris turkey in et chuck deserunt ad incididunt do.</p>
+								</div>
+								<form action="#">
+									<input type="number" value="1"/>
+									<button type="submit">Add to cart</button>
+								</form>
+								<div class="product-meta">
+									<span>
+										Categories: 
+										<a href="#">albums</a>,<a href="#">Music</a>
+									</span>
+									<span>
+										Tags: 
+										<a href="#">albums</a>,<a href="#">Music</a>
+									</span>
+								</div>
+								<!-- social-icon-start -->
+								<div class="social-icon mt-20">
+									<ul>
+										<li><a href="#" data-toggle="tooltip" title="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" title="Share on Twitter"><i  class="fa fa-twitter"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" title="Email to a Friend"><i class="fa fa-envelope-o"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" title="Pin on Pinterest"><i class="fa fa-pinterest"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" title="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
+									</ul>
+								</div>
+								<!-- social-icon-end -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- single-modal-end -->
+		</div>
+		<!-- modal-area-end -->
+		
+		<!-- all js here -->
+		<!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		
+		<script src='js/jquery.zoom.js'></script>
+		
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+		<!-- wow js -->
+        <script src="js/wow.min.js"></script>
+		<!-- jquery.nivo.slider.js -->
+        <script src="js/jquery.nivo.slider.js"></script>
+		<!-- chosen.jquery.min.js -->
+        <script src="js/chosen.jquery.min.js"></script>
+		<!-- jquery.countdown.min.js -->
+        <script src="js/jquery.countdown.min.js"></script>
+		<!-- jquery.flexslider.js -->
+        <script src="js/jquery.flexslider.js"></script>
+		<!-- jquery.counterup.min.js -->
+        <script src="js/jquery.counterup.min.js"></script>
+		<!-- waypoints.min.js -->
+        <script src="js/waypoints.min.js"></script>
+		<!-- plugins js -->
+        <script src="js/plugins.js"></script>
+		<!-- main js -->
+        <script src="js/main.js"></script>
+		
+
+		
+		<script>
+		
+		$(document).on('ready', function(){
+    $('#input-1').rating({min: 0, max: 8, step: 0.1, stars: 8});
+});
+		
+		</script>
+		
+		
+		<script>
+		$(document).ready(function(){
+			$('.zoom').zoom();
+			
+			
+		});
+	</script>
+	
+	
+	
+
+		
+		
+    </body>
+</html>
